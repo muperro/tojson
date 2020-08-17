@@ -1,0 +1,37 @@
+name: build
+
+on:
+  push:
+    branches:
+      - "*"
+    tags-ignore:
+      - "v*"
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [10.x, 12.x, 14.x]
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: setup node ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: install yarn
+        run: npm i -g yarn
+      - name: install dependencies
+        run: yarn install
+      - name: build
+        run: yarn build
+      - name: test
+        run: yarn test
+      - name: code coverage
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{secrets.CODECOV_TOKEN}}

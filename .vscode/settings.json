@@ -1,0 +1,25 @@
+{
+  "files.eol": "\n",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "[json]": {
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "editor.suggest.insertMode": "replace",
+    "editor.tabSize": 2,
+  },
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": false,
+    "editor.tabSize": 2,
+  },
+  "[yaml]": {
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.tabSize": 2,
+  }
+}
