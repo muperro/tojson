@@ -1,7 +1,12 @@
 {
   "name": "ts-tojson",
-  "version": "0.1.0",
-  "main": "index.js",
+  "version": "0.1.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "src",
+    "dist"
+  ],
   "repository": "git@github.com:muperro/ts-tojson.git",
   "author": "μ perro <uperro@gmail.com>",
   "license": "MIT",
