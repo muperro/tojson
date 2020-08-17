@@ -1,5 +1,5 @@
 {
-  "name": "tojson",
+  "name": "@muperro/tojson",
   "version": "0.1.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
