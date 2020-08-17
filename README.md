@@ -16,14 +16,14 @@
 ### Installation
 
 ```console
-npm install tojson
+npm install @muperro/tojson
 # or
-yarn add tojson
+yarn add @muperro/tojson
 ```
 ### Sample
 
 ```ts
-import { ToJson, JsonValueFormat, fromObject, toJSON } from "tojson";
+import { ToJson, JsonValueFormat, fromObject, toJSON } from "@muperro/tojson";
 
 class UserInfoEntity {
   @ToJson({ name: "one" })
@@ -95,8 +95,8 @@ console.log(json);
 
 ToJson is licensed under a [MIT License](https://github.com/muperro/tojson/blob/master/LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/tojson
-[npm-url]: https://www.npmjs.com/package/tojson
+[npm-image]: https://img.shields.io/npm/v/@muperro/tojson
+[npm-url]: https://www.npmjs.com/package/@muperro/tojson
 [build-image]: https://github.com/muperro/tojson/workflows/build/badge.svg
 [build-url]: https://github.com/muperro/tojson/actions
 [publish-image]: https://github.com/muperro/tojson/workflows/publish/badge.svg
