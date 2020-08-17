@@ -1,4 +1,4 @@
-# TS-ToJson
+# ToJson
 
 > @ToJson : property decorator for Typescript. 
 
@@ -16,14 +16,14 @@
 ### Installation
 
 ```console
-npm install ts-tojson
+npm install tojson
 # or
-yarn add ts-tojson
+yarn add tojson
 ```
 ### Sample
 
 ```ts
-import { ToJson, JsonValueFormat, fromObject, toJSON } from "ts-tojson";
+import { ToJson, JsonValueFormat, fromObject, toJSON } from "tojson";
 
 class UserInfoEntity {
   @ToJson({ name: "one" })
@@ -93,13 +93,13 @@ console.log(json);
 
 ## License
 
-TS-ToJson is licensed under a [MIT License](https://github.com/muperro/ts-tojson/blob/master/LICENSE).
+ToJson is licensed under a [MIT License](https://github.com/muperro/tojson/blob/master/LICENSE).
 
-[npm-image]: https://img.shields.io/npm/v/ts-tojson
-[npm-url]: https://www.npmjs.com/package/ts-tojson
-[build-image]: https://github.com/muperro/ts-tojson/workflows/build/badge.svg
-[build-url]: https://github.com/muperro/ts-tojson/actions
-[publish-image]: https://github.com/muperro/ts-tojson/workflows/publish/badge.svg
-[publish-url]: https://github.com/muperro/ts-tojson/actions
-[codecov-image]: https://codecov.io/gh/muperro/ts-tojson/branch/master/graph/badge.svg
-[codecov-url]: https://codecov.io/gh/muperro/ts-tojson
+[npm-image]: https://img.shields.io/npm/v/tojson
+[npm-url]: https://www.npmjs.com/package/tojson
+[build-image]: https://github.com/muperro/tojson/workflows/build/badge.svg
+[build-url]: https://github.com/muperro/tojson/actions
+[publish-image]: https://github.com/muperro/tojson/workflows/publish/badge.svg
+[publish-url]: https://github.com/muperro/tojson/actions
+[codecov-image]: https://codecov.io/gh/muperro/tojson/branch/master/graph/badge.svg
+[codecov-url]: https://codecov.io/gh/muperro/tojson
